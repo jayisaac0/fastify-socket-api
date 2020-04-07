@@ -1,0 +1,9 @@
+{
+    "user": "postgres",
+    "database": "test_db",
+    "password": "postgres",
+    "dialect": "postgres",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "logging": true
+}

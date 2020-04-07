@@ -1,0 +1,40 @@
+{
+  "name": "pet-manager-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.ts",
+  "scripts": {
+    "test": "jest --ci --verbose --forceExit --detectOpenHandles",
+    "start": "ts-node src/server.ts",
+    "test:watch": "jest --coverage --watchAll",
+    "build:watch": "onchange 'src/**/*.ts' -- npm run build",
+    "view:coverage": "serve coverage/lcov-report",
+    "clean": "rm -rf coverage src/**/*.js src/**/*.map",
+    "build": "tsc",
+    "migrate": "node ./migrate.js up",
+    "restart": "node ./migrate.js down && node ./migrate.js up && npm run test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/jest": "^25.1.4",
+    "config": "^3.3.0",
+    "dotenv": "^8.2.0",
+    "fastify": "^2.13.0",
+    "fastify-formbody": "^3.1.0",
+    "fastify-plugin": "^1.6.1",
+    "fastify-swagger": "^2.5.0",
+    "fastify-websocket": "^1.1.1",
+    "http": "0.0.0",
+    "import": "0.0.6",
+    "jest": "^25.1.0",
+    "nodemon": "^2.0.2",
+    "pg": "^7.18.2",
+    "typescript": "^3.8.3",
+    "ws": "^7.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^13.9.2"
+  }
+}

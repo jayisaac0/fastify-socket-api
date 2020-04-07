@@ -1,0 +1,9 @@
+{
+    "user": "test_prod_api",
+    "database": "db_test_prod",
+    "password": null,
+    "dialect": "postgres",
+    "host": "165.22.113.184",
+    "port": 26000,
+    "logging": false
+}
