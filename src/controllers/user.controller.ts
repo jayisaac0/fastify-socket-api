@@ -23,6 +23,7 @@ class userController{
         } catch (error) {
             console.log(error);
         }
+        
     };
 
 
